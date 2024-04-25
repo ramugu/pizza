@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.body {
+    background: url('/assets/images/bg_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.banner{
+    position: relative;
+    background-image: url("/assets/images/bg_3.jpg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.matter{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+    z-index: 2;
+}
+
+.matter h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.matter div a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 5px;
+}
+/* Services */
+.food {
+    background: url('/assets/images/food.png');
+    height: 90vh;
+}
+
+.about {
+    position: relative;
+    max-width: 350px;
+    top: 250px;
+}
+
+.flaticon::before {
+    content: url('/assets/images/diet.svg');
+    position: absolute;
+    left: 145px;
+    bottom: 200px;
+    z-index: 2;
+    filter: grayscale(100%);
+    /* Initially set the SVG image to grayscale */
+}
+
+.flaticon:hover::before {
+    filter: none;
+    /* Remove the grayscale filter on hover */
+}
+
+.flaticon::after {
+    content: "";
+    position: absolute;
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    left: 130px;
+    bottom: 190px;
+    z-index: 1;
+    transition: transform .4s ease-in-out;
+}
+
+.flaticon:hover::after {
+    border: none;
+    background: #ef9d07;
+    transform: rotate(45deg);
+}
+
+.flaticon1::before {
+    content: url('/assets/images/delivery.svg');
+}
+
+.flaticon2::before {
+    content: url('/assets/images/pizza-icon.svg');
+}
+/* pricing */
+small {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #fac564;
+}
+
+.haed-sec {
+    position: relative;
+}
+
+p.flip::before {
+    position: absolute;
+    left: 590px;
+    top: 60px;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #8d5d05;
+    margin: 0 auto;
+}
+
+p.flip::after {
+    position: absolute;
+    top: 60px;
+    right: 590px;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #8d5d05;
+    margin: 0 auto;
+}
+
+.sqr1 {
+    position: absolute;
+    top: 58px;
+    left: -30px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.sqr2 {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    width: 9px;
+    height: 9px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.sqr3 {
+    position: absolute;
+    top: 58px;
+    left: 30px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.haed-sec p {
+    margin-top: 50px;
+
+}
+/* ______________________ Footer ____________________*/
+
+.Footer{
+    height: 650px;
+}
+.Footer1{
+    padding-left: 50px;
+}
+
+.Footer2 span{
+    margin-top: -20px;
+    padding-left: 65px;
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.F1{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+}
+
+
+
+.F1-1{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.icon1{
+    color: #6c757d;
+    font-size: 12px;
+    padding-left: 55px;
+    margin-top: -30px;
+}
+
+.icon2{
+    color: #6c757d;
+    font-size: 12px;
+    padding-left: 55px;
+    margin-top: -20px;
+}
+
+.F1-2{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+}
+
+.F1-3{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+}
+
+.F1-4{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+}
+
+.icon3{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(49, 47, 47);
+    padding: 12px 16px; 
+}
+
+.icon4{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(49, 47, 47);
+    padding: 12px 17px; 
+}
+
+.icon5{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(49, 47, 47);
+    padding: 12px 15px; 
+}
+
+.row1{
+    color: #6c757d;
+}

@@ -140,6 +140,7 @@
     font-style: normal;
     color: #fac564;
 }
+/* Services css */
 
 .food {
     background: url('/assets/images/food.png');
@@ -192,6 +193,7 @@
 .flaticon2::before {
     content: url('/assets/images/pizza-icon.svg');
 }
+/* services css end */
 
 small {
     font-family: "Poppins", sans-serif;
