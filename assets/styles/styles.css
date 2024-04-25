@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background: url('/assets/images/bg_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+.whit {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.caro1 {
+    position: relative;
+    background-image: url("/assets/images/bg_3.jpg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.caro1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.caro2 {
+    background-image: url("/assets/images/bg_1.jpg");
+    background-size: 100% 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.caro2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.wel {
+    position: relative;
+    z-index: 2;
+}
+
+.wel span {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    text-align: center;
+    color: #fac564;
+}
+
+.wel .h11 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+}
+
+.wel .p1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.wel2 {
+    position: relative;
+    z-index: 2;
+}
+
+.wel1 .span {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #fac564;
+    text-align: end;
+}
+
+.wel1 .h11 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+    text-align: end;
+}
+
+.wel1 .p1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    text-align: end;
+}
+
+.anim {
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.iconn {
+    background-color: #fac564;
+}
+
+.pizz {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fac564;
+}
+
+.food {
+    background: url('/assets/images/food.png');
+    height: 90vh;
+}
+
+.about {
+    position: relative;
+    max-width: 350px;
+    top: 250px;
+}
+
+.flaticon::before {
+    content: url('/assets/images/diet.svg');
+    position: absolute;
+    left: 145px;
+    bottom: 200px;
+    z-index: 2;
+    filter: grayscale(100%);
+    /* Initially set the SVG image to grayscale */
+}
+
+.flaticon:hover::before {
+    filter: none;
+    /* Remove the grayscale filter on hover */
+}
+
+.flaticon::after {
+    content: "";
+    position: absolute;
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    left: 130px;
+    bottom: 190px;
+    z-index: 1;
+    transition: transform .4s ease-in-out;
+}
+
+.flaticon:hover::after {
+    border: none;
+    background: #ef9d07;
+    transform: rotate(45deg);
+}
+
+.flaticon1::before {
+    content: url('/assets/images/delivery.svg');
+}
+
+.flaticon2::before {
+    content: url('/assets/images/pizza-icon.svg');
+}
+
+small {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #fac564;
+}
+
+.haed-sec {
+    position: relative;
+}
+
+p.flip::before {
+    position: absolute;
+    left: 590px;
+    top: 60px;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #8d5d05;
+    margin: 0 auto;
+}
+
+p.flip::after {
+    position: absolute;
+    top: 60px;
+    right: 590px;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #8d5d05;
+    margin: 0 auto;
+}
+
+.sqr1 {
+    position: absolute;
+    top: 58px;
+    left: -30px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.sqr2 {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    width: 9px;
+    height: 9px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.sqr3 {
+    position: absolute;
+    top: 58px;
+    left: 30px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.haed-sec p {
+    margin-top: 50px;
+
+}
+
+.section {
+    background-image: url('/assets/images/bg_2.jpg');
+    background-position: 50% 82.4751px;
+    height: 650px;
+    position: relative;
+}
+
+.section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.img1 {
+    background-image: url('/assets/images/gallery-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.img2 {
+    background-image: url('/assets/images/gallery-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.img3 {
+    background-image: url('/assets/images/gallery-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.img4 {
+    background-image: url('/assets/images/gallery-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.img1::after,
+.img2::after,
+.img3::after,
+.img4::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 155px;
+    bottom: 115px;
+    z-index: 1;
+    transition: transform .3s ease-in-out;
+}
+
+.img1:hover::after,
+.img2:hover::after,
+.img3:hover::after,
+.img4:hover::after {
+    border: none;
+    background: #ef9d07;
+    transform: rotate(45deg);
+}
+
+
+.img1::before,
+.img2::before,
+.img3::before,
+.img4::before {
+    content: '';
+    background-image: url("/assets/images/search.svg");
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 25px;
+    width: 25px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+}
+
+
+.img1:hover::before,
+.img2:hover::before,
+.img3:hover::before,
+.img4:hover::before {
+    color: rgb(57, 6, 212);
+    font-size: medium;
+    display: block;
+}
+/* .tex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+} */
+.cont{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+}
+.review{
+    position: relative;
+}
+.rev1::before {
+    content: url('/assets/images/diet.svg');
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    z-index: 2;
+    filter: grayscale(100%);
+    /* Initially set the SVG image to grayscale */
+}
+
+.rev1:hover::before {
+    filter: none;
+    /* Remove the grayscale filter on hover */
+}
+
+.rev1::after {
+    content: "";
+    position: absolute;
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    left: -15px;
+    bottom: 30px;
+    z-index: 1;
+    transition: transform .4s ease-in-out;
+}
+
+.rev1:hover::after {
+    border: none;
+    background: #ef9d07;
+    transform: rotate(45deg);
+}
+
+.rev2::before {
+    content: url('/assets/images/delivery.svg');
+}
+
+.rev3::before {
+    content: url('/assets/images/pizza-icon.svg');
+}
+.rev4::before{
+    content: url('/assets/images/delivery.svg')
+}
+.num{
+    position: absolute;
+    z-index: 2;
+}
+.num1{
+ left: -10px;
+}
+
+/* ______________________ Footer ____________________*/
+
+.Footer{
+    height: 650px;
+}
+.Footer1{
+    padding-left: 50px;
+}
+
+.Footer2 span{
+    margin-top: -20px;
+    padding-left: 65px;
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.F1{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+}
+
+
+
+.F1-1{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.icon1{
+    color: #6c757d;
+    font-size: 12px;
+    padding-left: 55px;
+    margin-top: -30px;
+}
+
+.icon2{
+    color: #6c757d;
+    font-size: 12px;
+    padding-left: 55px;
+    margin-top: -20px;
+}
+
+.F1-2{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+}
+
+.F1-3{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+}
+
+.F1-4{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+}
+
+.icon3{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(49, 47, 47);
+    padding: 12px 16px; 
+}
+
+.icon4{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(49, 47, 47);
+    padding: 12px 17px; 
+}
+
+.icon5{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(49, 47, 47);
+    padding: 12px 15px; 
+}
+
+.row1{
+    color: #6c757d;
+}
